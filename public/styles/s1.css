@@ -1,0 +1,557 @@
+@charset "UTF-8";
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+
+
+body {
+      background-color:#100E15;
+      /* background: -webkit-gradient(linear, left top, left bottom, from(#100E15), to(#0b0b0c)) fixed; */
+      color: #d3d3d3;
+
+      -webkit-text-size-adjust: 100%;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      display: flex;
+      justify-content: center;
+
+      word-break: break-word;
+}
+
+
+body::-webkit-scrollbar {
+      width: 10px
+} 
+    
+body::-webkit-scrollbar-thumb {   
+      background-color: darkgrey;   
+}                
+
+
+body{
+      animation: init-background 2s ease;
+}
+
+a, span{
+      animation: rest 1s linear;
+}
+
+
+
+@keyframes init-background {
+      0%{
+            display: none;
+            background-color: #d3d3d3;
+            color: #d3d3d3;
+            
+      }
+      
+}
+
+@keyframes rest {
+      0%{
+            color: #d3d3d3;
+      }
+}
+
+
+
+
+main{
+
+      width: 100%;
+}
+
+#main-container{
+      margin: 3.6rem 20rem;
+
+      width: 100%;
+
+      
+}
+
+
+
+
+.block{
+      margin-top: 3rem;
+      width: 100%;
+}
+
+
+
+
+a{
+      color: #2563eb;
+      text-decoration: none;
+}
+
+.stack{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.stack a{
+      text-decoration: none;
+      color: whitesmoke;
+      background-color: #1F2937;
+      border: #00000011 0.03rem solid;
+      border-radius: .3rem;
+      padding: .5rem;
+
+}
+
+h1{
+
+      font-size: 3em;
+      font-weight: 700;
+      line-height: 2.9rem;
+
+      white-space: nowrap;
+    
+}
+
+h1 .gradient{
+      background: -webkit-linear-gradient(180deg, #1054e7, #1054e7,#3c71e2, #1054e7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      margin: 0;
+      display: inline-block;
+
+}
+
+h2{
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 1rem;
+}
+
+p{
+      font-size: 1.15rem;
+      line-height: 1.9rem;
+}
+
+.p-title{
+      font-size: 1.9rem;
+}
+
+svg{
+      margin: 10.4px 0;
+}
+
+.icons{
+      display: flex;
+      align-items: center;
+      
+
+}
+
+.header-icons{
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 1rem;
+      
+}
+
+.header-icons #localization{
+      background-color: #374151;
+      color: #d3d3d3;
+      border-radius: 2rem;
+
+      padding: 0 1rem 0 1rem;
+
+      display: flex;
+      align-items: center;
+      height: 2rem;
+      transition: .3s;
+
+}
+
+.header-icons #localization p{
+      margin-left: .4rem;
+      font-size: 12pt;
+}
+
+.header-icons #localization:hover{
+      background-color: #1F2937;
+      transition: .3s;
+}
+
+
+
+/* NAV */
+
+             /* MENU */
+
+
+             div.menu{
+                  width: 1.5rem;
+                  height: .08rem;
+                  background: whitesmoke;
+                  margin: .5rem;
+
+                  border-radius: .25rem;
+             }
+
+
+
+
+
+
+            .some-tag{
+                  background-color: #374151;
+                  color: #d3d3d3;
+                  border-radius: 2rem;
+            
+                  padding: 0 1rem 0 1rem;
+            
+                  display: flex;
+                  align-items: center;
+                  height: 2rem;
+                  transition: .3s;
+            
+            }
+            
+            .some-tag p{
+                  margin-left: .4rem;
+                  font-size: 12pt;
+            }
+            
+            .some-tag:hover{
+                  background-color: #1F2937;
+                  transition: .3s;
+            }
+
+
+
+header nav{
+
+      margin: 0 0 3.5rem 0;
+
+      border-radius: .4rem;
+
+      width: 100%;
+
+
+      display: flex;
+
+      justify-content: space-between;
+
+
+      
+}
+
+header nav ul{
+      margin: .2rem 0 .2rem 0;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+
+      color: white;
+}
+
+header nav ul li{
+
+      padding: .3rem 1rem .3rem 1rem;
+      border-radius: 1rem;
+
+      
+
+}
+
+header nav ul li:hover{
+      background-color: #181b20;
+}
+
+header nav ul li a{
+      text-decoration: none;
+      color: white;
+      font-size: 12pt;
+
+}
+
+#btn-menu-mobile{
+      display: none;
+
+      background-color: #00000000;
+      border: none;
+      outline: none;
+
+      height: 2.7rem;
+
+      padding: 0 0 0 .3rem;
+
+}
+
+
+
+
+@media (max-width: 600px){
+      #btn-menu-mobile{
+            display: block;
+
+      }
+
+      #nav-menu{
+            display: none;
+      }
+
+      #nav-menu.active{
+            display: flex;
+            flex-direction: column;
+            
+
+      }
+
+      header nav{
+            background-color: #181b20;
+      }
+
+      header nav ul{
+            display: flex;
+            justify-content: space-between;
+
+            list-style: none;
+      
+            color: white;
+      }
+
+    
+      
+      header nav ul li{
+            padding: .3rem 0 .3rem 0;
+
+            margin: .5rem 0 0 .5rem;
+
+            
+      }
+
+      header nav ul li:first-child{
+            margin-top: .7rem;
+      }
+
+      header nav ul li a{
+
+            font-size: 12pt;
+            margin: .5rem 0 .5rem 0;
+
+            text-decoration: none;
+            color: white;
+
+
+      }
+
+      
+}
+
+
+
+
+
+
+
+/* TABLE */
+
+
+ul.technologies{
+      list-style: none;
+      font-family: 'Fira Code', monospace;
+
+
+}
+
+ul.technologies li {
+      display: flex;
+      align-items: center;
+
+      width: 10rem;
+
+}
+
+ul.technologies li:nth-child(odd) {
+      float: left;
+}
+
+ul.technologies svg{
+      width: 2rem;
+      height: 2rem;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
+
+table{
+      width: 100%;
+      font-family: 'Fira Code', monospace;
+}
+
+table th{
+      display: none;
+}
+
+table td:last-child{
+      width: 100%;
+}
+
+table td p, span{
+      margin: 0 .5rem 0 .5rem;
+}
+
+table td p{
+      color: #adadad60;
+}
+
+
+table td span{
+      color: #d3d3d3;
+      font-weight:600;
+}
+
+table .td-icon svg{
+      width: 3rem;
+      height: 3rem;
+
+ 
+}
+
+
+table tr td{
+      
+      border: .1rem solid #37415155;
+
+      width: 7rem;
+      height: 7rem;
+
+      align-items: flex-start;
+      
+
+}
+
+table tr td:first-child{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+table td:last-child{
+      border-radius: 0 .5rem .5rem 0;
+}
+
+table td:first-child{
+      border-radius: .5rem 0 0 .5rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+      h1{
+
+            font-size: 2.6em;
+      
+          
+      }
+      #main-container{
+            margin: 2rem 1rem ;
+      }
+
+      header nav{
+            background-color: #181b20;
+            flex-direction: column;
+
+      }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+      h1{
+
+            font-size: 2.6em;
+      
+          
+      }
+      #main-container{
+            margin: 4rem 1.5rem;
+      }
+      
+}
+
+
+@media only screen and (max-width: 700px) {
+
+      
+
+      h1{
+
+            font-size: 2.6em;
+      
+          
+      }
+
+      #main{
+            margin: 4rem 1.5rem;
+      }
+
+
+      #btn-menu-mobile{
+            display: block;
+
+      }
+
+      #nav-menu{
+            display: none;
+      }
+
+      #nav-menu.active{
+            display: flex;
+            flex-direction: column;
+
+      }
+
+      header nav{
+            background-color: #181b20;
+            flex-direction: column;
+
+      }
+
+      header nav ul{
+            display: flex;
+            justify-content: space-between;
+
+            list-style: none;
+      
+            color: white;
+      }
+
+
+      
+      header nav ul li{
+            padding: .3rem 0 .3rem 0;
+
+            margin: .5rem 0 0 .5rem;
+
+      }
+
+      header nav ul li:first-child{
+            margin-top: .7rem;
+      }
+
+      header nav ul li a{
+
+            font-size: 12pt;
+
+            margin: .5rem 0 .5rem 0;
+
+            text-decoration: none;
+            color: white;
+      }
+
+}
+
